@@ -179,7 +179,7 @@ hr.small {
 
 footer {
     padding: 100px 0;
-    padding-top: 20%;
+    padding-top: 10%;
 
 }
 
@@ -238,14 +238,12 @@ font-size: 3em;
     -o-background-size: cover;
 }
 
-.space {
 
-}
 
 .textWindow {
   padding-top: 4%;
   padding-bottom: 4%;
-  background: url(../img/callout.jpg) no-repeat center center scroll;
+  background: url(../img/stars.jpeg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
