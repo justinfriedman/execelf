@@ -33,29 +33,36 @@
 <body>
 
   <!-- Navigation -->
-  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-      <li class="sidebar-brand">
-        <a href="#top" onclick=$ ( "#menu-close").click();>Execelf</a>
-      </li>
-      <li>
-        <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
-      </li>
-      <li>
-        <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
-      </li>
-      <li>
-        <a href="#services" onclick=$ ( "#menu-close").click();>Services</a>
-      </li>
-      <li>
-        <a href="#portfolio" onclick=$ ( "#menu-close").click();>Creatives</a>
-      </li>
-      <li>
-        <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">ExecElf</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#services">Services</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
   </nav>
 
   <!-- Header -->
@@ -535,6 +542,23 @@
       });
     });
   </script>
+  <script>
+  function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+    }else{
+        $('.navbar').removeClass("scrolled");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}
+</script>
 
 </body>
 
