@@ -185,10 +185,27 @@ footer {
 
 /* My Additions */
 
+/*#Lh3-div {
+  background-color: rgba(115, 119, 120, 0.55);
+  margin: auto;
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  display: inline-block;
 
+}*/
+
+#Lh1 {
+  font-size: 6em;
+}
 
 #Lh3 {
 font-size: 3em;
+font-weight: bold;
+color: white;
+
 }
 
 #learn-more {
@@ -302,3 +319,12 @@ font-size: 3em;
     color: #b77033;
 
 }
+
+
+@media only screen and (max-device-width: 400px) {
+  #Lh1 {
+    font-size: 6em;
+    color: white;
+  }
+
+	}

@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+div {
+margin: auto;
+padding-top: 15%;
+
+}
+
+.oopsBtn {
+  background-color: rgba(51,122,183, 1);
+  margin-left: 38%;
+  margin-right: 38%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+color: white;
+}
